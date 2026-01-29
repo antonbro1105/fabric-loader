@@ -1,19 +1,22 @@
 {
   "schemaVersion": 1,
-  "id": "fabricloader",
-  "name": "Fabric Loader",
-  "version": "${version}",
+  "id": "spidermod",
+  "version": "1.0.0",
+  "name": "Giant Spider Boss",
+  "description": "Босс Король Пауков x5 размера",
+  "authors": [ "Me" ],
+  "contact": { "homepage": "https://fabricmc.net" },
+  "license": "CC0-1.0",
+  "icon": "assets/spidermod/icon.png",
   "environment": "*",
-  "description": "The base mod loader.",
-  "contact": {
-    "homepage": "https://fabricmc.net",
-    "irc": "ircs://irc.esper.net:6697/fabric",
-    "issues": "https://github.com/FabricMC/fabric-loader/issues",
-    "sources": "https://github.com/FabricMC/fabric-loader"
+  "entrypoints": {
+    "main": [ "net.fabricmc.example.ExampleMod" ],
+    "client": [ "net.fabricmc.example.ExampleMod" ]
   },
-  "license": "Apache-2.0",
-  "icon": "assets/fabricloader/icon.png",
-  "authors": [
-    "FabricMC"
-  ]
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
 }
